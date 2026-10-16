@@ -1,28 +1,28 @@
 export const services = [
   {
-    title: "ISO 9001 Certification",
-    desc: "Quality management for consistent products, services and customer trust.",
+    title: "GeM Seller Registration",
+    desc: "Set up your verified seller or service provider profile on gem.gov.in.",
     tag: "Most booked",
   },
   {
-    title: "ISO 14001 Certification",
-    desc: "Environmental management to cut waste, meet rules and win green-minded buyers.",
+    title: "Brand Registration on GeM",
+    desc: "Get your brand approved so you can list products under your own name.",
   },
   {
-    title: "ISO 45001 Certification",
-    desc: "Occupational health and safety systems that protect your people and your sites.",
+    title: "Deemed OEM Registration",
+    desc: "Apply for the Deemed OEM panel when you are not the original manufacturer.",
   },
   {
-    title: "ISO 22000 Certification",
-    desc: "Food safety management for manufacturers, caterers and food-chain businesses.",
+    title: "GeM Vendor Assessment",
+    desc: "Clear the desktop and video assessment for OEM status and brand approval.",
   },
   {
-    title: "ISO 27001 Certification",
-    desc: "Information security management to protect client data and win IT contracts.",
+    title: "Catalogue Upload & Listing",
+    desc: "Get your products and services listed correctly so buyers can find and order them.",
   },
   {
-    title: "Surveillance & Transition",
-    desc: "Annual surveillance audits, recertification and transition to the 2026 editions.",
+    title: "Bid & Tender Support",
+    desc: "Guidance on finding the right bids, preparing your offer and taking part on GeM.",
   },
 ];
 
@@ -32,36 +32,36 @@ export const processSteps = [
     desc: "Share your business details in under two minutes.",
   },
   {
-    title: "Gap analysis",
-    desc: "Our expert reviews your processes and tells you exactly what is missing.",
+    title: "Profile & document check",
+    desc: "We match your PAN, GST and Aadhaar details before anything is submitted.",
   },
   {
-    title: "Documents & audit",
-    desc: "We prepare your documents and coordinate the Stage 1 and Stage 2 audits.",
+    title: "Registration & approvals",
+    desc: "We register you on GeM and handle brand, OEM or assessment requests.",
   },
   {
-    title: "Certificate issued",
-    desc: "Your certificate is valid for 3 years, with surveillance support after that.",
+    title: "Start bidding",
+    desc: "List your products and start bidding for government orders.",
   },
 ];
 
 export const documentsRequired = [
   "PAN card of the business / proprietor",
-  "ID proof of the owner / authorised signatory",
-  "Business registration proof (GST / Udyam / incorporation certificate)",
-  "Address proof of the office, factory or site",
-  "Business scope: products / services, employee count & sites",
-  "Mobile number & email ID of the contact person",
+  "Aadhaar of the authorised signatory",
+  "Cancelled cheque / bank account details",
+  "GST certificate & business address proof",
+  "Business registration proof (incorporation / partnership deed / Udyam)",
+  "Aadhaar-linked mobile number & email ID (for OTP)",
 ];
 
-/* Standard-wise documents (same icon order as above) */
-export const documentsStandard = [
-  "Existing licences, approvals & sector certificates (if any)",
-  "ISO 22000: product flow chart, HACCP records & FSSAI license",
-  "ISO 14001: waste, effluent & pollution-control consents",
-  "ISO 45001: site hazard details, safety equipment & incident records",
-  "ISO 9001: SOPs, quality records & signed policies you already have",
-  "ISO 27001: IT asset list, access control & data-handling details",
+/* OEM & Brand documents (same icon order as above) */
+export const documentsOem = [
+  "Trademark certificate or brand registration proof",
+  "Vendor Assessment report (for OEM panel and brand approval)",
+  "Manufacturing unit or factory details (for OEM)",
+  "Factory / premises address proof & licences",
+  "OEM authorisation letter (for Deemed OEM) or brand authorisation",
+  "Beneficial ownership details of the business",
 ];
 
 export const whyUs = [
@@ -101,28 +101,28 @@ export const stats = [
 
 export const faqs = [
   {
-    q: "1. What is ISO certification?",
-    a: "ISO standards are international benchmarks for how a business manages quality, safety, the environment, food safety or information security. Certification is proof, from an independent audit, that you follow them.",
+    q: "1. Is GeM registration free?",
+    a: "Yes. Registering as a seller on GeM carries no government registration fee. You pay only our professional fee for handling it. GeM's transaction charges apply later, and only on larger orders.",
   },
   {
-    q: "2. Who issues the ISO certificate?",
-    a: "Not ISO itself. An independent certification body audits your business and issues the certificate. In India, such bodies are accredited by NABCB, so always check the accreditation of the body named on your certificate.",
+    q: "2. What are GeM's transaction charges?",
+    a: "Under GeM's revenue policy effective 9 August 2024, orders up to ₹10 lakh carry no transaction charge, orders above ₹10 lakh and up to ₹10 crore carry 0.30%, and orders above ₹10 crore carry a flat ₹3 lakh. Many older websites still show outdated rates.",
   },
   {
-    q: "3. Which ISO standard do I need?",
-    a: "ISO 9001 is the most common (quality). Others are ISO 14001 (environment), ISO 45001 (health and safety), ISO 22000 (food safety) and ISO 27001 (information security). Tenders and buyers usually mention the standard they want.",
+    q: "3. Who can register as a seller?",
+    a: "Manufacturers, traders, resellers, startups and service providers with a valid PAN, business registration proof and a bank account. Your name, address and PAN must match your GST and tax records.",
   },
   {
-    q: "4. How long does it take?",
-    a: "It depends on your size, sites and readiness. For small businesses ISO 9001 typically takes a few weeks, while ISO 27001 usually takes longer. Our expert will give you a realistic timeline after a quick gap analysis.",
+    q: "4. Which documents do I need?",
+    a: "PAN of the business or proprietor, Aadhaar of the authorised signatory (linked to a mobile for OTP), GST certificate, business registration proof and bank details. Udyam registration is needed to claim MSME benefits.",
   },
   {
-    q: "5. How long is the certificate valid?",
-    a: "Three years, with surveillance audits every year and a recertification audit before the three years end. Missing a surveillance audit can lead to the certificate being suspended.",
+    q: "5. What is Deemed OEM and when do I need it?",
+    a: "Deemed OEM status lets a seller bid as an OEM in categories that give OEMs exemptions, usually based on an authorisation from the original manufacturer. GeM checks that authorisation letter with the manufacturer. We guide you through the application.",
   },
   {
-    q: "6. Has anything changed in 2026?",
-    a: "Yes. ISO 14001:2026 was published in April and ISO 9001:2026 in September 2026. Existing certificates stay valid during the transition period, and we will guide you on the right edition and the transition audit.",
+    q: "6. What is vendor assessment?",
+    a: "It is a verification of your business by GeM-appointed agencies in two stages: a desktop assessment of your documents and a video assessment. It is used for the OEM panel and brand approval, and it also helps your seller rating.",
   },
 ];
 
@@ -135,43 +135,43 @@ export const businessTypes = [
   "Other",
 ];
 
-// PLACEHOLDER pricing — replace with the real ISO plan prices and inclusions before going live.
+// PLACEHOLDER pricing — replace with the real GeM plan prices and inclusions before going live.
 export const pricingPlans = [
   {
-    name: "Starter",
-    desc: "For businesses that need one ISO standard, such as ISO 9001.",
-    originalPrice: 9999,
+    name: "Seller",
+    desc: "For businesses that want a verified seller profile on GeM.",
+    originalPrice: 4999,
     discount: "50% off",
-    price: 4999,
-    instantOff: 5000,
+    price: 2499,
+    instantOff: 2500,
     emi: false,
     highlight: false,
     features: [
-      "Any 1 ISO Standard of Your Choice",
-      "Gap Analysis & Documentation Support",
-      "Audit Coordination with Certification Body",
-      "Dedicated Advisor for ISO",
+      "GeM Seller Registration",
+      "Profile & Document Check",
+      "Udyam / MSME Benefits Setup",
+      "Dedicated Advisor for GeM",
     ],
   },
   {
-    name: "Combo",
-    desc: "For businesses that want two standards with one integrated audit.",
-    originalPrice: 17999,
+    name: "OEM & Brand",
+    desc: "For manufacturers and brand owners who want OEM and brand status.",
+    originalPrice: 15999,
     discount: "50% off",
-    price: 8999,
-    instantOff: 9000,
+    price: 7999,
+    instantOff: 8000,
     emi: false,
     highlight: true,
     features: [
-      "Any 2 ISO Standards (Integrated Audit)",
-      "Documentation for Both Systems",
-      "Internal Audit & Management Review Support",
-      "Dedicated Advisor for ISO",
+      "Everything in Seller",
+      "Brand Approval Filing",
+      "Deemed OEM Application Support",
+      "Vendor Assessment Guidance",
     ],
   },
   {
     name: "Complete",
-    desc: "For growing businesses that want three standards and long-term support.",
+    desc: "Everything you need to start listing and bidding on GeM.",
     originalPrice: 29999,
     discount: "50% off",
     price: 14999,
@@ -179,35 +179,34 @@ export const pricingPlans = [
     emi: true,
     highlight: false,
     features: [
-      "Any 3 ISO Standards",
-      "Integrated Management System Documents",
-      "Surveillance Audit Support (Year 1 & 2)",
-      "Transition Support to the 2026 Editions",
+      "Everything in OEM & Brand",
+      "Catalogue Upload & Listing Support",
+      "Bid & Tender Participation Guidance",
       "Dedicated Support & Fast Process",
     ],
   },
 ];
 
-export const whoNeedsIso = [
+export const whoNeedsGem = [
   {
-    title: "Manufacturers & exporters",
-    desc: "Overseas buyers and quality-focused customers often ask for ISO 9001 before placing orders.",
-    tag: "Often asked by buyers",
+    title: "Manufacturers & MSMEs",
+    desc: "Sell directly to government departments and PSUs, with Udyam benefits such as EMD exemption and purchase preference.",
+    tag: "MSME benefits",
   },
   {
-    title: "Tender & government suppliers",
-    desc: "Many tenders and procurement platforms ask suppliers to show an ISO certificate.",
-    tag: "Often asked in tenders",
+    title: "Traders, resellers & distributors",
+    desc: "List and sell products from authorised brands and manufacturers to government buyers.",
+    tag: "Resellers welcome",
   },
   {
-    title: "IT, BPO & data-handling firms",
-    desc: "ISO 27001 shows clients that their data is handled securely.",
-    tag: "ISO 27001",
+    title: "Service providers",
+    desc: "Transport, manpower, IT, housekeeping, consulting and more can be offered on GeM.",
+    tag: "Services accepted",
   },
   {
-    title: "Food, construction & high-risk sites",
-    desc: "ISO 22000 for food safety and ISO 45001 for safer workplaces.",
-    tag: "ISO 22000 / 45001",
+    title: "Startups & new businesses",
+    desc: "Reach government buyers early, without paying any government fee to register.",
+    tag: "No registration fee",
   },
 ];
 

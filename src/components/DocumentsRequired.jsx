@@ -154,7 +154,7 @@ export default function DocumentsRequired() {
           </h2>
 
           <p className="mt-4 text-base leading-7 text-slate-600 sm:text-lg sm:leading-8">
-            Keep these handy and your ISO certificate application can be filed without
+            Keep these handy and your GeM profile application can be filed without
             delays.
           </p>
         </motion.div>

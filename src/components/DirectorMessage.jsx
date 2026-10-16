@@ -22,7 +22,7 @@ const director = {
   eyebrow: "From the Director's desk",
   heading: "Compliance should never slow your business down",
   message: [
-    "Every business owner dreams of growing without unnecessary roadblocks. That is the thought behind Legal Papers India: to make ISO certification and compliance simple, so you never lose valuable time to complicated paperwork.",
+    "Every business owner dreams of growing without unnecessary roadblocks. That is the thought behind Legal Papers India: to make GeM registration and compliance simple, so you never lose valuable time to complicated paperwork.",
     "Our focus is straightforward: the right guidance, a clear process and delivery on time. You only need to share your documents. We take care of the rest.",
   ],
 };

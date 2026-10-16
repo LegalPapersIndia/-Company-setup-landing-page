@@ -48,7 +48,7 @@ export default function FAQ() {
               </h2>
 
               <p className="mx-auto mt-4 max-w-xl text-base leading-relaxed text-slate-600 sm:text-lg lg:mx-0">
-                Quick answers to what people ask us most about ISO
+                Quick answers to what people ask us most about GeM
                 registration.
               </p>
             </motion.div>
