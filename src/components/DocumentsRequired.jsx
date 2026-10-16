@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { FileCheck2, ClipboardList, Check } from "lucide-react";
-import { documentsRequired, documentsStandard } from "../data";
+import { documentsRequired, documentsOem } from "../data";
 
 import iconPan from "../assets/documents/doc-pan.png";
 import iconAadhaar from "../assets/documents/doc-aadhaar.png";
@@ -30,8 +30,8 @@ const themes = [
 ];
 
 const tabs = [
-  { key: "basic", label: "All Standards" },
-  { key: "license", label: "By Standard" },
+  { key: "basic", label: "Seller Registration" },
+  { key: "license", label: "OEM & Brand" },
 ];
 
 function DocCard({ doc, i }) {
@@ -116,7 +116,7 @@ function DocCard({ doc, i }) {
 
 export default function DocumentsRequired() {
   const [tab, setTab] = useState("basic");
-  const docs = tab === "basic" ? documentsRequired : documentsStandard;
+  const docs = tab === "basic" ? documentsRequired : documentsOem;
 
   return (
     <section className="relative overflow-hidden bg-gradient-to-b from-white via-[#f5f9ff] to-white py-12 sm:py-20">

@@ -1,7 +1,7 @@
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import TrustStrip from "./components/TrustStrip";
-// import WhoNeedsGem from "./components/WhoNeedsGem";
+import WhoNeedsGem from "./components/WhoNeedsGem";
 import GemSelector from "./components/GemSelector";
 import Services from "./components/Services";
 import Pricing from "./components/Pricing";
@@ -17,7 +17,7 @@ import Footer from "./components/Footer";
 import StickyMobileCTA from "./components/StickyMobileCTA";
 import WhatsAppButton from "./components/WhatsAppButton";
 // import WhyUs from "./components/WhyUs";
-// import DocumentsRequired from "./components/DocumentsRequired";
+import DocumentsRequired from "./components/DocumentsRequired";
 import DirectorMessage from "./components/DirectorMessage";
 
 export default function App() {
@@ -28,13 +28,13 @@ export default function App() {
       <DirectorMessage />
       <Reviews />
       <TrustStrip />
-      {/* <WhoNeedsGem /> */}
+      <WhoNeedsGem />
       <GemSelector />
       <Services />
       <Pricing />
       <ProcessSteps />
       {/* <WhyUs /> */}
-      {/* <DocumentsRequired /> */}
+      <DocumentsRequired />
       <InTheNews />
       <Gallery />
       <FAQ />

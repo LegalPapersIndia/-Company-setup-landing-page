@@ -1,41 +1,41 @@
 import { motion } from "framer-motion";
 import {
-  FaAward,
-  FaLeaf,
-  FaHardHat,
-  FaUtensils,
-  FaShieldAlt,
-  FaSyncAlt,
+  FaStore,
+  FaTrademark,
+  FaUserCheck,
+  FaClipboardCheck,
+  FaBoxOpen,
+  FaGavel,
 } from "react-icons/fa";
 import { ArrowRight, Sparkles } from "lucide-react";
 import { services } from "../data";
 
-import img9001 from "../assets/services/iso-9001.png";
-import img14001 from "../assets/services/iso-14001.png";
-import img45001 from "../assets/services/iso-45001.png";
-import img22000 from "../assets/services/iso-22000.png";
-import img27001 from "../assets/services/iso-27001.png";
-import imgSurveillance from "../assets/services/iso-surveillance.png";
+import imgSeller from "../assets/services/gem-seller.png";
+import imgBrand from "../assets/services/gem-brand.png";
+import imgDeemed from "../assets/services/gem-deemed-oem.png";
+import imgAssessment from "../assets/services/gem-vendor-assessment.png";
+import imgCatalogue from "../assets/services/gem-catalogue.png";
+import imgBids from "../assets/services/gem-bids.png";
 
 /* "Get started" link kahan jaye: top wale form ki id */
 const CTA_HREF = "#top-form";
 
 const serviceImages = [
-  img9001,
-  img14001,
-  img45001,
-  img22000,
-  img27001,
-  imgSurveillance,
+  imgSeller,
+  imgBrand,
+  imgDeemed,
+  imgAssessment,
+  imgCatalogue,
+  imgBids,
 ];
 
 const serviceIcons = [
-  FaAward,
-  FaLeaf,
-  FaHardHat,
-  FaUtensils,
-  FaShieldAlt,
-  FaSyncAlt,
+  FaStore,
+  FaTrademark,
+  FaUserCheck,
+  FaClipboardCheck,
+  FaBoxOpen,
+  FaGavel,
 ];
 
 /* Har card ka apna colour theme */
@@ -172,7 +172,7 @@ export default function Services() {
           </span>
 
           <h2 className="mt-4 font-display text-3xl font-extrabold leading-tight text-[#173252] sm:text-4xl md:text-5xl">
-            Everything under ISO,{" "}
+            Everything on GeM,{" "}
             <span className="bg-gradient-to-r from-orange-500 to-amber-500 bg-clip-text text-transparent">
               handled in one place
             </span>
