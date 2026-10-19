@@ -1,67 +1,67 @@
 export const services = [
   {
-    title: "GeM Seller Registration",
-    desc: "Set up your verified seller or service provider profile on gem.gov.in.",
+    title: "Trademark Registration",
+    desc: "Search, class selection and end-to-end filing of your logo, name or tagline with the Trade Marks Registry.",
     tag: "Most booked",
   },
   {
-    title: "Brand Registration on GeM",
-    desc: "Get your brand approved so you can list products under your own name.",
+    title: "Brand Name Registration",
+    desc: "Check availability and secure your brand name before someone else does.",
   },
   {
-    title: "Deemed OEM Registration",
-    desc: "Apply for the Deemed OEM panel when you are not the original manufacturer.",
+    title: "Trademark Objection",
+    desc: "A well-argued reply to the Registry's examination report, within the 30-day deadline.",
   },
   {
-    title: "GeM Vendor Assessment",
-    desc: "Clear the desktop and video assessment for OEM status and brand approval.",
+    title: "Trademark Hearing",
+    desc: "Preparation and assistance for your hearing when the Registrar needs more explanation.",
   },
   {
-    title: "Catalogue Upload & Listing",
-    desc: "Get your products and services listed correctly so buyers can find and order them.",
+    title: "Trademark Opposition",
+    desc: "File or defend an opposition within the 4-month window after your mark is published.",
   },
   {
-    title: "Bid & Tender Support",
-    desc: "Guidance on finding the right bids, preparing your offer and taking part on GeM.",
+    title: "Trademark Renewal",
+    desc: "Renew your registration every 10 years so your protection never lapses.",
   },
 ];
 
 export const processSteps = [
   {
     title: "Fill the form",
-    desc: "Share your business details in under two minutes.",
+    desc: "Share your brand and business details in under two minutes.",
   },
   {
-    title: "Profile & document check",
-    desc: "We match your PAN, GST and Aadhaar details before anything is submitted.",
+    title: "Search & class selection",
+    desc: "We check availability and pick the right class before anything is filed.",
   },
   {
-    title: "Registration & approvals",
-    desc: "We register you on GeM and handle brand, OEM or assessment requests.",
+    title: "Application filed",
+    desc: "We file Form TM-A online, and you can start using the ™ symbol right away.",
   },
   {
-    title: "Start bidding",
-    desc: "List your products and start bidding for government orders.",
+    title: "Registration & ®",
+    desc: "After examination and the opposition window, your certificate is issued.",
   },
 ];
 
 export const documentsRequired = [
-  "PAN card of the business / proprietor",
-  "Aadhaar of the authorised signatory",
-  "Cancelled cheque / bank account details",
-  "GST certificate & business address proof",
-  "Business registration proof (incorporation / partnership deed / Udyam)",
-  "Aadhaar-linked mobile number & email ID (for OTP)",
+  "PAN card of the applicant",
+  "Aadhaar or another photo ID of the applicant",
+  "MSME / Startup certificate (for the fee concession)",
+  "Address proof of the applicant",
+  "Signed Power of Attorney (Form TM-48) — we prepare it",
+  "Trademark logo (JPEG) & proof of use, if already in use",
 ];
 
-/* OEM & Brand documents (same icon order as above) */
-export const documentsOem = [
-  "Trademark certificate or brand registration proof",
-  "Vendor Assessment report (for OEM panel and brand approval)",
-  "Manufacturing unit or factory details (for OEM)",
-  "Factory / premises address proof & licences",
-  "OEM authorisation letter (for Deemed OEM) or brand authorisation",
-  "Beneficial ownership details of the business",
+/* Company / Firm documents (same icon order as above) */
+export const documentsCompany = [
+  "PAN card of the company / firm",
+  "ID proof of directors / partners / authorised signatory",
+  "Certificate of Incorporation or Partnership Deed",
+  "Registered office address proof",
+  "Authorisation & Power of Attorney (Form TM-48)",
+  "Trademark logo (JPEG), proof of use & MSME / Startup certificate, if any",
 ];
 
 export const whyUs = [
@@ -101,28 +101,28 @@ export const stats = [
 
 export const faqs = [
   {
-    q: "1. Is GeM registration free?",
-    a: "Yes. Registering as a seller on GeM carries no government registration fee. You pay only our professional fee for handling it. GeM's transaction charges apply later, and only on larger orders.",
+    q: "1. How long does trademark registration take in India?",
+    a: "About 12–18 months if there is no objection or opposition, and longer if there is. You can start using the ™ symbol from the day your application is filed.",
   },
   {
-    q: "2. What are GeM's transaction charges?",
-    a: "Under GeM's revenue policy effective 9 August 2024, orders up to ₹10 lakh carry no transaction charge, orders above ₹10 lakh and up to ₹10 crore carry 0.30%, and orders above ₹10 crore carry a flat ₹3 lakh. Many older websites still show outdated rates.",
+    q: "2. Can I use my trademark before registration is complete?",
+    a: "Yes, you can use the ™ symbol once the application is filed. The ® symbol is only for registered trademarks, and using it earlier is not allowed in India.",
   },
   {
-    q: "3. Who can register as a seller?",
-    a: "Manufacturers, traders, resellers, startups and service providers with a valid PAN, business registration proof and a bank account. Your name, address and PAN must match your GST and tax records.",
+    q: "3. What is the government fee for a trademark?",
+    a: "₹4,500 per class for individuals, startups and small enterprises (e-filing), and ₹9,000 per class for others. These fees are non-refundable, so a proper search before filing is important. Our professional fee is separate and starts at ₹2,499.",
   },
   {
-    q: "4. Which documents do I need?",
-    a: "PAN of the business or proprietor, Aadhaar of the authorised signatory (linked to a mobile for OTP), GST certificate, business registration proof and bank details. Udyam registration is needed to claim MSME benefits.",
+    q: "4. What if the Registry raises an objection?",
+    a: "You must reply within 30 days of the examination report. If the reply is not accepted, a hearing can be scheduled. Our experts prepare the reply and assist you at the hearing.",
   },
   {
-    q: "5. What is Deemed OEM and when do I need it?",
-    a: "Deemed OEM status lets a seller bid as an OEM in categories that give OEMs exemptions, usually based on an authorisation from the original manufacturer. GeM checks that authorisation letter with the manufacturer. We guide you through the application.",
+    q: "5. What if my application is opposed?",
+    a: "Anyone can oppose within four months of journal publication. You must file a counter-statement within two months of the notice, and the Registrar decides after evidence and a hearing.",
   },
   {
-    q: "6. What is vendor assessment?",
-    a: "It is a verification of your business by GeM-appointed agencies in two stages: a desktop assessment of your documents and a video assessment. It is used for the OEM panel and brand approval, and it also helps your seller rating.",
+    q: "6. How long is a trademark valid, and how do I renew it?",
+    a: "A registered trademark is valid for ten years and can be renewed indefinitely, every ten years. The renewal fee is ₹9,000 per class (e-filing), and a grace period with a surcharge applies after expiry.",
   },
 ];
 
@@ -135,78 +135,80 @@ export const businessTypes = [
   "Other",
 ];
 
-// PLACEHOLDER pricing — replace with the real GeM plan prices and inclusions before going live.
+// Prices and inclusions taken from legalpapersindia.com/trademark-registration (govt fee extra).
 export const pricingPlans = [
   {
-    name: "Seller",
-    desc: "For businesses that want a verified seller profile on GeM.",
-    originalPrice: 4999,
+    name: "Basic",
+    desc: "Application initiation within 2 working days.",
+    originalPrice: 5000,
     discount: "50% off",
     price: 2499,
-    instantOff: 2500,
+    instantOff: 2499,
     emi: false,
     highlight: false,
     features: [
-      "GeM Seller Registration",
-      "Profile & Document Check",
-      "Udyam / MSME Benefits Setup",
-      "Dedicated Advisor for GeM",
+      "Trademark Search & Class Selection",
+      "Filing of Application in One Class",
+      "Digital Filing of TM-A Form",
     ],
   },
   {
-    name: "OEM & Brand",
-    desc: "For manufacturers and brand owners who want OEM and brand status.",
-    originalPrice: 15999,
+    name: "Standard",
+    desc: "Application initiation within 1 working day.",
+    originalPrice: 9999,
     discount: "50% off",
-    price: 7999,
-    instantOff: 8000,
+    price: 4999,
+    instantOff: 4999,
     emi: false,
     highlight: true,
     features: [
-      "Everything in Seller",
-      "Brand Approval Filing",
-      "Deemed OEM Application Support",
-      "Vendor Assessment Guidance",
+      "Inclusive of Basic",
+      "Trademark Search Report + Filing (1 Class)",
+      "Logo + Wordmark Filing",
+      "Logo & Brand Name Design and Advice",
+      "Objection Reply (once, if required)",
     ],
   },
   {
-    name: "Complete",
-    desc: "Everything you need to start listing and bidding on GeM.",
-    originalPrice: 29999,
+    name: "Premium",
+    desc: "Application initiation on the same day.",
+    originalPrice: 19999,
     discount: "50% off",
-    price: 14999,
-    instantOff: 15000,
+    price: 9999,
+    instantOff: 9999,
     emi: true,
     highlight: false,
     features: [
-      "Everything in OEM & Brand",
-      "Catalogue Upload & Listing Support",
-      "Bid & Tender Participation Guidance",
-      "Dedicated Support & Fast Process",
+      "Inclusive of Standard",
+      "Trademark Filing (up to 2 Classes)",
+      "Logo, Wordmark & Tagline Protection",
+      "Objection Reply (twice, if required)",
+      "2 Hearing Assistance",
+      "Journal Publication Follow-up",
     ],
   },
 ];
 
-export const whoNeedsGem = [
+export const whoNeedsTm = [
   {
-    title: "Manufacturers & MSMEs",
-    desc: "Sell directly to government departments and PSUs, with Udyam benefits such as EMD exemption and purchase preference.",
-    tag: "MSME benefits",
+    title: "Startups & new brands",
+    desc: "Protect your name and logo early, before you spend on building an audience.",
+    tag: "File early",
   },
   {
-    title: "Traders, resellers & distributors",
-    desc: "List and sell products from authorised brands and manufacturers to government buyers.",
-    tag: "Resellers welcome",
+    title: "Online & D2C sellers",
+    desc: "Marketplaces and brand programs often ask for a trademark application or registration.",
+    tag: "Marketplace-ready",
   },
   {
-    title: "Service providers",
-    desc: "Transport, manpower, IT, housekeeping, consulting and more can be offered on GeM.",
-    tag: "Services accepted",
+    title: "Manufacturers & product brands",
+    desc: "Protect product names, packaging and logos across India and keep copycats away.",
+    tag: "Stops copycats",
   },
   {
-    title: "Startups & new businesses",
-    desc: "Reach government buyers early, without paying any government fee to register.",
-    tag: "No registration fee",
+    title: "Professionals, studios & creators",
+    desc: "Clinics, agencies, studios and creators can protect their name, logo and tagline.",
+    tag: "Builds brand value",
   },
 ];
 

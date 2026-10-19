@@ -1,11 +1,11 @@
 import { motion } from "framer-motion";
 import { Check, ArrowRight, HelpCircle } from "lucide-react";
-import { FaIndustry, FaBoxes, FaHandsHelping, FaRocket } from "react-icons/fa";
+import { FaRocket, FaShoppingCart, FaIndustry, FaPalette } from "react-icons/fa";
 
-import { whoNeedsGem } from "../data";
+import { whoNeedsTm } from "../data";
 import lpiMascot from "../assets/lpi-mascot.png";
 
-const itemIcons = [FaIndustry, FaBoxes, FaHandsHelping, FaRocket];
+const itemIcons = [FaRocket, FaShoppingCart, FaIndustry, FaPalette];
 
 /* Har card ka apna colour theme */
 const themes = [
@@ -67,7 +67,7 @@ function NeedCard({ item, i }) {
         className={`relative mt-5 inline-flex w-fit items-center gap-1.5 rounded-full px-3 py-1 text-xs font-bold ${t.soft} ${t.text}`}
       >
         <Check className="h-3.5 w-3.5" strokeWidth={3} />
-        {item.tag ?? "GeM"}
+        {item.tag ?? "Trademark"}
       </div>
 
       {/* bottom accent line */}
@@ -78,7 +78,7 @@ function NeedCard({ item, i }) {
   );
 }
 
-export default function WhoNeedsGem() {
+export default function WhoNeedsTm() {
   return (
     <section className="relative overflow-hidden bg-gradient-to-b from-white via-[#f5f9ff] to-white py-12 sm:py-20 lg:py-24">
       {/* ================= BACKGROUND DECORATION ================= */}
@@ -115,18 +115,18 @@ export default function WhoNeedsGem() {
               <h2 className="mt-4 font-display text-3xl font-extrabold leading-tight text-[#173252] sm:text-4xl lg:text-5xl">
                 Who needs{" "}
                 <span className="bg-gradient-to-r from-[#126dc4] to-cyan-500 bg-clip-text text-transparent">
-                  GeM?
+                  a Trademark?
                 </span>
               </h2>
 
               <p className="mx-auto mt-4 max-w-2xl text-base leading-relaxed text-slate-600 sm:text-lg lg:mx-0">
-                Any one of these applies to you? GeM can bring government orders to your business.
+                Any one of these applies to you? A registered trademark protects the brand you are building.
               </p>
             </motion.div>
 
             {/* ================= CARDS ================= */}
             <div className="mt-8 grid grid-cols-1 gap-4 sm:mt-10 sm:grid-cols-2 sm:gap-5">
-              {whoNeedsGem.map((item, i) => (
+              {whoNeedsTm.map((item, i) => (
                 <NeedCard key={item.title} item={item} i={i} />
               ))}
             </div>
@@ -179,7 +179,7 @@ export default function WhoNeedsGem() {
               className="relative z-20 max-w-md text-center"
             >
               <h3 className="font-display text-2xl font-bold leading-tight text-black sm:text-3xl">
-                Get your GeM registration,
+                Get your trademark registered,
                 <span className="block text-blue-600">
                   done correctly and hassle-free.
                 </span>
@@ -193,7 +193,7 @@ export default function WhoNeedsGem() {
             >
               <motion.img
                 src={lpiMascot}
-                alt="LPI GeM Registration Mascot"
+                alt="LPI Trademark Registration Mascot"
                 initial={{ opacity: 0, scale: 0.9 }}
                 whileInView={{ opacity: 1, scale: 1 }}
                 viewport={{ once: true }}

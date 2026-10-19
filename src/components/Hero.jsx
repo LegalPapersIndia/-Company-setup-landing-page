@@ -1,18 +1,18 @@
 import { motion } from "framer-motion";
 import { CheckCircle2, Star, ArrowRight } from "lucide-react";
 import LeadForm from "./LeadForm";
-import heroImage from "../assets/gem-hero.png";
+import heroImage from "../assets/tm-hero.png";
 import secureIcon from "../assets/card.png";
 import speedIcon from "../assets/card2.png";
 import supportIcon from "../assets/card3.png";
 
 const points = [
-  "Profile & Document Check",
-  "Seller, OEM & Brand Support",
-  "Dedicated GeM Advisor",
-  "Catalogue & Bid Guidance",
-  "MSME Benefits Setup",
-  "No Hidden Charges",
+  "Get TM Draft in 1 Day",
+  "Online Process for Trademark",
+  "Dedicated Trademark Advisor",
+  "Search & Class Selection",
+  "Fast & Hassle-Free",
+  "Legal Protection for Your Brand",
 ];
 
 const trustBadges = [
@@ -26,20 +26,20 @@ const trustBadges = [
   {
     image: speedIcon,
     label: "Fast Turnaround",
-    sub: "Quick profile setup",
+    sub: "TM draft in 1 day",
     grad: "from-orange-400 to-amber-500",
     ring: "bg-orange-50",
   },
   {
     image: supportIcon,
     label: "Dedicated Expert Support",
-    sub: "Talk to a real GeM expert",
+    sub: "Talk to a real trademark expert",
     grad: "from-sky-400 to-blue-600",
     ring: "bg-blue-50",
   },
 ];
 
-const miniSteps = ["Share documents", "We set up on GeM", "Start bidding"];
+const miniSteps = ["Share brand details", "We search & file", "Use ™ right away"];
 
 export default function Hero() {
   return (
@@ -80,7 +80,7 @@ export default function Hero() {
             transition={{ duration: 0.5 }}
             className="font-mono text-sm font-bold uppercase tracking-[0.16em] text-orange-500 sm:text-base sm:tracking-[0.2em]"
           >
-            GeM Registration · Pan-India
+            Trademark Registration · Pan-India
           </motion.p>
 
           {/* Main Heading */}
@@ -90,11 +90,11 @@ export default function Hero() {
             transition={{ duration: 0.6, delay: 0.1 }}
             className="mt-4 font-display text-[2.35rem] font-extrabold leading-[1.08] tracking-tight text-[#126dc4] sm:text-5xl lg:text-[3.65rem]"
           >
-            Get GeM Registration
+            Get Trademark Registration
             <br />
-            and sell to the{" "}
+            starting at just{" "}
             <span className="relative inline-block italic text-orange-500">
-              Government.
+              ₹2,499.
               {/* Underline */}
               <svg
                 viewBox="0 0 160 14"
@@ -119,9 +119,9 @@ export default function Hero() {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="mt-6 max-w-lg text-base leading-relaxed text-slate-600 sm:text-lg"
           >
-            Legal Papers India handles your GeM seller profile, document checks
-            and approvals — so you spend your time winning government orders,
-            not fighting the portal.
+            Legal Papers India handles the brand search, class selection and
+            filing — so your name and logo are protected before a competitor
+            claims them.
           </motion.p>
 
           {/* Banner image — mobile/tablet only, full width (edge to edge) */}
@@ -133,7 +133,7 @@ export default function Hero() {
           >
             <img
               src={heroImage}
-              alt="GeM registration by Legal Papers India"
+              alt="Trademark registration by Legal Papers India"
               className="h-auto w-full object-contain sm:mx-auto sm:max-w-[560px]"
             />
           </motion.div>
@@ -276,7 +276,7 @@ export default function Hero() {
           >
             <img
               src={heroImage}
-              alt="GeM registration by Legal Papers India"
+              alt="Trademark registration by Legal Papers India"
               className="relative z-10 h-auto w-64 object-contain drop-shadow-[0_22px_35px_rgba(30,70,120,0.22)] md:w-80 lg:w-[24rem] xl:w-[28rem]"
             />
           </motion.div>

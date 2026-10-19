@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { FileCheck2, ClipboardList, Check } from "lucide-react";
-import { documentsRequired, documentsOem } from "../data";
+import { documentsRequired, documentsCompany } from "../data";
 
 import iconPan from "../assets/documents/doc-pan.png";
 import iconAadhaar from "../assets/documents/doc-aadhaar.png";
@@ -30,8 +30,8 @@ const themes = [
 ];
 
 const tabs = [
-  { key: "basic", label: "Seller Registration" },
-  { key: "license", label: "OEM & Brand" },
+  { key: "basic", label: "Individual / Proprietor" },
+  { key: "license", label: "Company / Firm" },
 ];
 
 function DocCard({ doc, i }) {
@@ -116,7 +116,7 @@ function DocCard({ doc, i }) {
 
 export default function DocumentsRequired() {
   const [tab, setTab] = useState("basic");
-  const docs = tab === "basic" ? documentsRequired : documentsOem;
+  const docs = tab === "basic" ? documentsRequired : documentsCompany;
 
   return (
     <section className="relative overflow-hidden bg-gradient-to-b from-white via-[#f5f9ff] to-white py-12 sm:py-20">
@@ -154,7 +154,7 @@ export default function DocumentsRequired() {
           </h2>
 
           <p className="mt-4 text-base leading-7 text-slate-600 sm:text-lg sm:leading-8">
-            Keep these handy and your GeM profile application can be filed without
+            Keep these handy and your trademark application can be filed without
             delays.
           </p>
         </motion.div>

@@ -1,8 +1,8 @@
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import TrustStrip from "./components/TrustStrip";
-import WhoNeedsGem from "./components/WhoNeedsGem";
-import GemSelector from "./components/GemSelector";
+import WhoNeedsTm from "./components/WhoNeedsTm";
+import TmSelector from "./components/TmSelector";
 import Services from "./components/Services";
 import Pricing from "./components/Pricing";
 import ProcessSteps from "./components/ProcessSteps";
@@ -28,8 +28,8 @@ export default function App() {
       <DirectorMessage />
       <Reviews />
       <TrustStrip />
-      <WhoNeedsGem />
-      <GemSelector />
+      <WhoNeedsTm />
+      <TmSelector />
       <Services />
       <Pricing />
       <ProcessSteps />

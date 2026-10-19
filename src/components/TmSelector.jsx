@@ -1,121 +1,147 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import {
-  FaStore,
+  FaFileSignature,
+  FaExclamationCircle,
+  FaGavel,
+  FaBalanceScale,
+  FaSyncAlt,
   FaTrademark,
-  FaUserCheck,
-  FaClipboardCheck,
   FaCheckCircle,
   FaRegClock,
   FaRegCheckCircle,
   FaInfoCircle,
-  FaRupeeSign,
 } from "react-icons/fa";
 import { ArrowRight, Sparkles } from "lucide-react";
 
 /* ------------------------------------------------------------------
-   Neeche ka array edit karke kisi bhi option ka text badal sakte ho.
-   time: sirf indicative hai (GeM ke review pe depend karta hai)
+   Neeche ka array edit karke kisi bhi stage ka text badal sakte ho.
+   time: us stage ki deadline ya indicative samay
    note: "Good to know" ka chhota message (optional)
    ------------------------------------------------------------------ */
 const CTA_HREF = "#top-form";
 
 const standards = [
   {
-    key: "seller",
-    icon: FaStore,
-    name: "Seller Registration",
-    title: "Seller / Service Provider",
-    tagline: "Your entry ticket to government orders.",
+    key: "registration",
+    icon: FaFileSignature,
+    name: "Registration",
+    title: "New Trademark Registration",
+    tagline: "Protect your name, logo or tagline across India.",
     bestFor: [
-      "Manufacturers and traders selling to government",
-      "Service providers such as transport, manpower and IT",
-      "Startups and MSMEs starting with government buyers",
+      "You are launching a new brand, logo or tagline",
+      "Your brand is growing and copycats are a risk",
+      "A marketplace or investor asks for a registered mark",
     ],
     gets: [
-      "A verified seller profile on gem.gov.in",
-      "Access to bids and direct purchase orders",
-      "Setup for Udyam and MSME benefits",
+      "Trademark search and the right class selection",
+      "Online filing of Form TM-A in your name",
+      "Tracking through examination and publication",
     ],
-    time: "Quick once your details match",
-    fact: "No government registration fee",
-    cta: "Get GeM Seller Registration",
-    note: "Transaction charges apply only on larger orders: nil up to ₹10 lakh per order, and 0.30% above that (up to ₹10 crore).",
+    time: "Typically 12–18 months if unopposed",
+    fact: "™ usable from the filing day",
+    cta: "Start Trademark Registration",
+    note: "Government fee is ₹4,500 per class for individuals, startups and small enterprises (e-filing), and ₹9,000 per class for others. It is non-refundable, so a proper search first saves money.",
     grad: "from-orange-400 to-amber-500",
     text: "text-orange-600",
     check: "text-orange-500",
     btn: "from-orange-500 to-amber-500 shadow-[0_14px_28px_-10px_rgba(249,115,22,0.7)]",
   },
   {
-    key: "brand",
-    icon: FaTrademark,
-    name: "Brand Approval",
-    title: "Brand Registration on GeM",
-    tagline: "List your products under your own brand.",
+    key: "objection",
+    icon: FaExclamationCircle,
+    name: "Objection",
+    title: "Examination Report Reply",
+    tagline: "Turn an objection into an acceptance.",
     bestFor: [
-      "Brand owners and manufacturers",
-      "Sellers with a registered trademark",
-      "OEMs who want their brand listed on GeM",
+      "The Registry has issued an examination report",
+      "Your mark is called descriptive or similar to another",
+      "You received an objection and are unsure how to reply",
     ],
     gets: [
-      "Your brand approved in the GeM brand list",
-      "Permission to upload products under your brand",
-      "Stronger buyer trust and visibility",
+      "Study of the grounds of the objection",
+      "A well-argued written reply with supporting evidence",
+      "Follow-up until the Registry decides",
     ],
-    time: "Depends on GeM review",
-    fact: "Checked against your trademark",
-    cta: "Get Brand Approval",
-    note: "Brand requests are checked against your trademark certificate. If you have no trademark, GeM can treat your company name as the brand name.",
+    time: "Reply within 30 days of the report",
+    fact: "A missed deadline can abandon the application",
+    cta: "Reply to My Objection",
+    note: "Most objections can be resolved with a strong reply. If the Registry is not convinced, it may schedule a hearing.",
     grad: "from-sky-400 to-blue-600",
     text: "text-blue-600",
     check: "text-blue-500",
     btn: "from-sky-500 to-blue-600 shadow-[0_14px_28px_-10px_rgba(37,99,235,0.7)]",
   },
   {
-    key: "deemed",
-    icon: FaUserCheck,
-    name: "Deemed OEM",
-    title: "Deemed OEM Panel",
-    tagline: "Bid as an OEM when you are not the original manufacturer.",
+    key: "hearing",
+    icon: FaGavel,
+    name: "Hearing",
+    title: "Registrar Hearing",
+    tagline: "Present your case clearly before the Registrar.",
     bestFor: [
-      "Assemblers, integrators and brand-led sellers",
-      "Traders sourcing from an original manufacturer",
-      "Sellers whose OEM is not registered on GeM",
+      "Your objection reply was not accepted",
+      "A hearing notice has been issued to you",
+      "You want expert arguments prepared for the hearing",
     ],
     gets: [
-      "OEM-panel access in eligible categories",
-      "Benefits that GeM gives to OEM sellers in bids",
-      "Application and authorisation letter support",
+      "Hearing preparation and written submissions",
+      "Assistance on the day of the hearing",
+      "Follow-up on the Registrar's order",
     ],
-    time: "GeM turnaround: about 5 working days",
-    fact: "Authorisation letter required",
-    cta: "Get Deemed OEM Status",
-    note: "GeM checks your authorisation letter with the original manufacturer, and rejects the request if that manufacturer is already registered on GeM.",
+    time: "Date fixed by the Registry",
+    fact: "Registrar decides after the hearing",
+    cta: "Get Hearing Support",
+    note: "If the Registrar is satisfied, your mark moves on to publication in the Trade Marks Journal.",
     grad: "from-violet-400 to-purple-600",
     text: "text-purple-600",
     check: "text-purple-500",
     btn: "from-violet-500 to-purple-600 shadow-[0_14px_28px_-10px_rgba(139,92,246,0.7)]",
   },
   {
-    key: "assessment",
-    icon: FaClipboardCheck,
-    name: "Vendor Assessment",
-    title: "Vendor Assessment",
-    tagline: "Get your business verified and rated higher.",
+    key: "opposition",
+    icon: FaBalanceScale,
+    name: "Opposition",
+    title: "File or Defend an Opposition",
+    tagline: "Stop look-alike marks, or defend your own application.",
     bestFor: [
-      "OEMs and manufacturers seeking OEM-panel status",
-      "Sellers who need brand approval",
-      "Businesses that want a stronger seller rating",
+      "A similar mark has appeared in the Trade Marks Journal",
+      "Someone has opposed your application",
+      "You want to stop a copycat before it gets registered",
     ],
     gets: [
-      "Guidance through desktop and video assessment",
-      "Document checks and gap fixes before the assessment",
-      "A vendor assessment report for OEM and brand requests",
+      "Review of the conflicting mark and legal grounds",
+      "Drafting of the notice or counter-statement and evidence",
+      "Support right up to the hearing",
     ],
-    time: "Depends on category & turnover",
-    fact: "Desktop + video assessment",
-    cta: "Get Vendor Assessment Help",
-    note: "Assessments are conducted by GeM-appointed agencies. Requirements and fees depend on your category and turnover.",
+    time: "File within 4 months of publication",
+    fact: "Govt fee ₹2,700 per class (e-filing)",
+    cta: "Get Opposition Help",
+    note: "An applicant who does not file a counter-statement within two months of the opposition notice risks the application being treated as abandoned.",
+    grad: "from-rose-400 to-red-500",
+    text: "text-red-600",
+    check: "text-red-500",
+    btn: "from-rose-500 to-red-500 shadow-[0_14px_28px_-10px_rgba(239,68,68,0.7)]",
+  },
+  {
+    key: "renewal",
+    icon: FaSyncAlt,
+    name: "Renewal",
+    title: "Trademark Renewal",
+    tagline: "Keep your brand protected for the next 10 years.",
+    bestFor: [
+      "Your registration is close to completing 10 years",
+      "Your mark has expired and is in the grace period",
+      "You want a reminder so you never miss the date",
+    ],
+    gets: [
+      "Renewal filing for every class you hold",
+      "Help with the surcharge or restoration if it has lapsed",
+      "A reminder before your next due date",
+    ],
+    time: "Every 10 years",
+    fact: "Govt fee ₹9,000 per class (e-filing)",
+    cta: "Renew My Trademark",
+    note: "After expiry a grace period applies with an additional surcharge, and a mark that is not renewed can be removed from the register.",
     grad: "from-emerald-400 to-teal-600",
     text: "text-emerald-600",
     check: "text-emerald-500",
@@ -123,12 +149,12 @@ const standards = [
   },
 ];
 
-/* GeM registration: sahi jankari ke 4 checks */
+/* Trademark: sahi symbol aur sahi process ke 4 checks */
 const checks = [
-  "The official portal is gem.gov.in, and seller registration carries no government fee",
-  "Your name, address and PAN must match your GST records, as most rejections come from mismatches",
-  "Transaction charges are nil up to ₹10 lakh per order and 0.30% above that",
-  "Ask for a written quote that shows our professional fee separately from government charges",
+  "Use ™ from the day you file. It shows you claim the mark while registration is pending",
+  "Use ® only after the registration certificate is issued. Using it earlier is not allowed in India",
+  "Search before you file, as government fees are non-refundable even if the application fails",
+  "File in the right class. India has 45 (goods 1–34, services 35–45) and a wrong class limits protection",
 ];
 
 /* ------------------------------------------------------------------
@@ -179,10 +205,10 @@ function Panel({ s }) {
           </div>
         </div>
 
-        {/* ---------- middle: best for ---------- */}
+        {/* ---------- middle: when it applies ---------- */}
         <div>
           <p className="text-[11px] font-bold uppercase tracking-wider text-slate-500">
-            Best for
+            When it applies
           </p>
           <ul className="mt-3 space-y-3">
             {s.bestFor.map((b) => (
@@ -194,10 +220,10 @@ function Panel({ s }) {
           </ul>
         </div>
 
-        {/* ---------- right: what you get ---------- */}
+        {/* ---------- right: how we help ---------- */}
         <div>
           <p className="text-[11px] font-bold uppercase tracking-wider text-slate-500">
-            What you get
+            How we help
           </p>
           <ul className="mt-3 space-y-3">
             {s.gets.map((g) => (
@@ -234,13 +260,13 @@ function Panel({ s }) {
 /* ------------------------------------------------------------------
    Section
    ------------------------------------------------------------------ */
-export default function GemSelector() {
+export default function TmSelector() {
   const [active, setActive] = useState(standards[0].key);
   const current = standards.find((s) => s.key === active);
 
   return (
     <section
-      id="gem-services"
+      id="tm-stages"
       className="relative overflow-hidden bg-gradient-to-b from-white via-[#f6faff] to-white py-12 sm:py-20"
     >
       {/* ================= BACKGROUND DECORATION ================= */}
@@ -266,19 +292,19 @@ export default function GemSelector() {
         >
           <span className="inline-flex items-center gap-2 rounded-full bg-blue-50 px-4 py-1.5 text-xs font-bold uppercase tracking-wider text-blue-700 ring-1 ring-blue-200">
             <Sparkles className="h-4 w-4" />
-            Choose what you need
+            Find your stage
           </span>
 
           <h2 className="mt-4 font-display text-3xl font-extrabold leading-tight text-[#173252] sm:text-4xl md:text-5xl">
-            What do you need on{" "}
+            Where is your trademark{" "}
             <span className="bg-gradient-to-r from-[#126dc4] to-cyan-500 bg-clip-text text-transparent">
-              GeM?
+              right now?
             </span>
           </h2>
 
           <p className="mt-4 text-base leading-7 text-slate-600 sm:mt-5 sm:text-lg sm:leading-8">
-            Pick one to see who it suits, what you get and how long it takes.
-            Not sure? Our expert will tell you in a quick call.
+            Pick your stage to see what happens next, the deadline to watch and how
+            we help. Not sure? Our expert will tell you in a quick call.
           </p>
         </motion.div>
 
@@ -307,7 +333,7 @@ export default function GemSelector() {
               >
                 {isActive && (
                   <motion.span
-                    layoutId="gem-active-pill"
+                    layoutId="tm-active-pill"
                     transition={{ type: "spring", stiffness: 380, damping: 30 }}
                     className="absolute inset-0 rounded-full bg-gradient-to-r from-[#0b4f99] via-[#126dc4] to-[#1e88e5] shadow-[0_10px_22px_-8px_rgba(18,109,196,0.7)]"
                   />
@@ -332,29 +358,29 @@ export default function GemSelector() {
           </AnimatePresence>
         </div>
 
-        {/* ================= "GeM IS FREE" NOTE ================= */}
+        {/* ================= SYMBOLS & CLASS NOTE ================= */}
         <motion.div
           initial={{ opacity: 0, y: 28 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-40px" }}
           transition={{ duration: 0.55 }}
-          className="mt-10 overflow-hidden rounded-3xl border border-emerald-200 bg-gradient-to-br from-emerald-50 via-white to-teal-50 p-5 shadow-[0_18px_45px_-24px_rgba(5,150,105,0.35)] sm:mt-14 sm:p-8"
+          className="mt-10 overflow-hidden rounded-3xl border border-indigo-200 bg-gradient-to-br from-indigo-50 via-white to-violet-50 p-5 shadow-[0_18px_45px_-24px_rgba(79,70,229,0.35)] sm:mt-14 sm:p-8"
         >
           <div className="flex items-start gap-4">
             <motion.span
               animate={{ scale: [1, 1.12, 1] }}
               transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
-              className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-gradient-to-br from-emerald-500 to-teal-500 text-white shadow-md sm:h-14 sm:w-14"
+              className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-gradient-to-br from-indigo-500 to-violet-500 text-white shadow-md sm:h-14 sm:w-14"
             >
-              <FaRupeeSign className="h-5 w-5 sm:h-6 sm:w-6" />
+              <FaTrademark className="h-5 w-5 sm:h-6 sm:w-6" />
             </motion.span>
             <div>
               <h3 className="font-display text-xl font-extrabold text-[#173252] sm:text-2xl">
-                GeM registration is free. Pay only for expert help.
+                Use ™ and ® the right way
               </h3>
               <p className="mt-1.5 text-sm leading-relaxed text-slate-600 sm:text-base">
-                Some websites charge "GeM fees" that do not exist or promise
-                guaranteed orders. Check these four things before you pay anyone.
+                Small mistakes with symbols, classes or deadlines can cost you your
+                brand. Check these four things before you file.
               </p>
             </div>
           </div>
@@ -367,9 +393,9 @@ export default function GemSelector() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.4, delay: i * 0.08 }}
-                className="flex items-start gap-3 rounded-2xl border border-emerald-100 bg-white p-4 shadow-sm"
+                className="flex items-start gap-3 rounded-2xl border border-indigo-100 bg-white p-4 shadow-sm"
               >
-                <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-emerald-400 to-teal-500 text-xs font-extrabold text-white">
+                <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-indigo-400 to-violet-500 text-xs font-extrabold text-white">
                   {i + 1}
                 </span>
                 <span className="text-sm leading-snug text-slate-700">{c}</span>
@@ -379,9 +405,9 @@ export default function GemSelector() {
         </motion.div>
 
         <p className="mx-auto mt-6 max-w-3xl text-center text-xs leading-relaxed text-slate-500">
-          Government fees and transaction charges are set by GeM and can change;
-          check gem.gov.in for the latest. Timelines are indicative and depend
-          on GeM's review.
+          Government fees are set by the Trade Marks Registry and can change;
+          check ipindia.gov.in for the latest. Timelines are indicative and
+          depend on the Registry.
         </p>
       </div>
     </section>

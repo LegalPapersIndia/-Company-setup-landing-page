@@ -1,41 +1,41 @@
 import { motion } from "framer-motion";
 import {
-  FaStore,
-  FaTrademark,
-  FaUserCheck,
-  FaClipboardCheck,
-  FaBoxOpen,
+  FaFileSignature,
+  FaLightbulb,
+  FaExclamationCircle,
   FaGavel,
+  FaBalanceScale,
+  FaSyncAlt,
 } from "react-icons/fa";
 import { ArrowRight, Sparkles } from "lucide-react";
 import { services } from "../data";
 
-import imgSeller from "../assets/services/gem-seller.png";
-import imgBrand from "../assets/services/gem-brand.png";
-import imgDeemed from "../assets/services/gem-deemed-oem.png";
-import imgAssessment from "../assets/services/gem-vendor-assessment.png";
-import imgCatalogue from "../assets/services/gem-catalogue.png";
-import imgBids from "../assets/services/gem-bids.png";
+import imgRegistration from "../assets/services/tm-registration.png";
+import imgBrandName from "../assets/services/tm-brand-name.png";
+import imgObjection from "../assets/services/tm-objection.png";
+import imgHearing from "../assets/services/tm-hearing.png";
+import imgOpposition from "../assets/services/tm-opposition.png";
+import imgRenewal from "../assets/services/tm-renewal.png";
 
 /* "Get started" link kahan jaye: top wale form ki id */
 const CTA_HREF = "#top-form";
 
 const serviceImages = [
-  imgSeller,
-  imgBrand,
-  imgDeemed,
-  imgAssessment,
-  imgCatalogue,
-  imgBids,
+  imgRegistration,
+  imgBrandName,
+  imgObjection,
+  imgHearing,
+  imgOpposition,
+  imgRenewal,
 ];
 
 const serviceIcons = [
-  FaStore,
-  FaTrademark,
-  FaUserCheck,
-  FaClipboardCheck,
-  FaBoxOpen,
+  FaFileSignature,
+  FaLightbulb,
+  FaExclamationCircle,
   FaGavel,
+  FaBalanceScale,
+  FaSyncAlt,
 ];
 
 /* Har card ka apna colour theme */
@@ -172,7 +172,7 @@ export default function Services() {
           </span>
 
           <h2 className="mt-4 font-display text-3xl font-extrabold leading-tight text-[#173252] sm:text-4xl md:text-5xl">
-            Everything on GeM,{" "}
+            Everything for your Trademark,{" "}
             <span className="bg-gradient-to-r from-orange-500 to-amber-500 bg-clip-text text-transparent">
               handled in one place
             </span>

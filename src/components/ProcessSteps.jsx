@@ -145,7 +145,7 @@ export default function ProcessSteps() {
           <h2 className="mt-4 font-display text-3xl font-extrabold leading-tight text-[#173252] sm:text-4xl md:text-5xl">
             Four steps to{" "}
             <span className="bg-gradient-to-r from-[#126dc4] to-cyan-500 bg-clip-text text-transparent">
-              your GeM profile
+              your trademark
             </span>
           </h2>
 
