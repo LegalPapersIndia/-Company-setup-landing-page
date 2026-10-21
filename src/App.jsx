@@ -1,8 +1,8 @@
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import TrustStrip from "./components/TrustStrip";
-import WhoNeedsTm from "./components/WhoNeedsTm";
-import TmSelector from "./components/TmSelector";
+import WhoNeedsCo from "./components/WhoNeedsCo";
+import CompanySelector from "./components/CompanySelector";
 import Services from "./components/Services";
 import Pricing from "./components/Pricing";
 import ProcessSteps from "./components/ProcessSteps";
@@ -28,8 +28,8 @@ export default function App() {
       <DirectorMessage />
       <Reviews />
       <TrustStrip />
-      <WhoNeedsTm />
-      <TmSelector />
+      <WhoNeedsCo />
+      <CompanySelector />
       <Services />
       <Pricing />
       <ProcessSteps />

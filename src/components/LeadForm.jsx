@@ -113,7 +113,7 @@ export default function LeadForm({ variant = "card" }) {
     <div className="pointer-events-none absolute -right-8 -top-10 h-28 w-28 rounded-full bg-white/10 blur-2xl" />
 
     <p className="relative z-10 font-display text-xl font-bold text-white sm:text-2xl">
-      Start your trademark registration
+      Start your company registration
     </p>
   </div>
 )}

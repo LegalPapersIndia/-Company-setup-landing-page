@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { FaWhatsapp } from "react-icons/fa";
 
 const WHATSAPP_NUMBER = "919211037448";
-const DEFAULT_MESSAGE = "Hi, I want to Register Trademark (Import Export Code).";
+const DEFAULT_MESSAGE = "Hi, I want to Register Company (Import Export Code).";
 
 export default function WhatsAppButton() {
   return (

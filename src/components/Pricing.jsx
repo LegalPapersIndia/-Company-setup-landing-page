@@ -289,7 +289,7 @@ export default function Pricing() {
 
           <p className="mx-auto mt-4 max-w-2xl text-base leading-relaxed text-slate-600 sm:text-lg">
             Simple plans with professional support, transparent pricing and
-            everything you need to get your trademark registered and stay compliant.
+            everything you need to get your company registered and stay compliant.
           </p>
         </motion.div>
 

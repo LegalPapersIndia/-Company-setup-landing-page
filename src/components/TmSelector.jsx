@@ -296,7 +296,7 @@ export default function TmSelector() {
           </span>
 
           <h2 className="mt-4 font-display text-3xl font-extrabold leading-tight text-[#173252] sm:text-4xl md:text-5xl">
-            Where is your trademark{" "}
+            Where is your company{" "}
             <span className="bg-gradient-to-r from-[#126dc4] to-cyan-500 bg-clip-text text-transparent">
               right now?
             </span>

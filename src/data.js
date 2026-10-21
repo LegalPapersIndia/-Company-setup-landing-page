@@ -1,67 +1,67 @@
 export const services = [
   {
-    title: "Trademark Registration",
-    desc: "Search, class selection and end-to-end filing of your logo, name or tagline with the Trade Marks Registry.",
+    title: "Private Limited Company",
+    desc: "The most trusted structure for startups and growing businesses, filed end-to-end on the MCA portal.",
     tag: "Most booked",
   },
   {
-    title: "Brand Name Registration",
-    desc: "Check availability and secure your brand name before someone else does.",
+    title: "Limited Liability Partnership",
+    desc: "Limited liability with lighter compliance, ideal for professionals and small businesses.",
   },
   {
-    title: "Trademark Objection",
-    desc: "A well-argued reply to the Registry's examination report, within the 30-day deadline.",
+    title: "One Person Company",
+    desc: "A company for a single founder, with limited liability and a nominee.",
   },
   {
-    title: "Trademark Hearing",
-    desc: "Preparation and assistance for your hearing when the Registrar needs more explanation.",
+    title: "Partnership Firm",
+    desc: "A simple, low-cost setup for two or more people who want to start together.",
   },
   {
-    title: "Trademark Opposition",
-    desc: "File or defend an opposition within the 4-month window after your mark is published.",
+    title: "Sole Proprietorship",
+    desc: "The fastest way for one person to start, with the lowest paperwork.",
   },
   {
-    title: "Trademark Renewal",
-    desc: "Renew your registration every 10 years so your protection never lapses.",
+    title: "Producer Company",
+    desc: "A company owned by farmers and primary producers who want to work and sell together.",
   },
 ];
 
 export const processSteps = [
   {
     title: "Fill the form",
-    desc: "Share your brand and business details in under two minutes.",
+    desc: "Share your business idea and contact details in under two minutes.",
   },
   {
-    title: "Search & class selection",
-    desc: "We check availability and pick the right class before anything is filed.",
+    title: "Choose your structure",
+    desc: "Our expert compares the options and confirms the right one for you.",
   },
   {
-    title: "Application filed",
-    desc: "We file Form TM-A online, and you can start using the ™ symbol right away.",
+    title: "Name & MCA filing",
+    desc: "We reserve your name and file the incorporation forms with all documents.",
   },
   {
-    title: "Registration & ®",
-    desc: "After examination and the opposition window, your certificate is issued.",
+    title: "Certificate issued",
+    desc: "Your incorporation certificate and PAN land in your inbox.",
   },
 ];
 
 export const documentsRequired = [
-  "PAN card of the applicant",
-  "Aadhaar or another photo ID of the applicant",
-  "MSME / Startup certificate (for the fee concession)",
-  "Address proof of the applicant",
-  "Signed Power of Attorney (Form TM-48) — we prepare it",
-  "Trademark logo (JPEG) & proof of use, if already in use",
+  "PAN card of every director / partner",
+  "Aadhaar or other photo ID of every director / partner",
+  "Registered office proof: rent agreement or ownership proof with NOC",
+  "Latest utility bill of the registered office",
+  "Digital signature (DSC) of directors / designated partners — we arrange it",
+  "Mobile number & email ID of every director / partner (for OTP)",
 ];
 
-/* Company / Firm documents (same icon order as above) */
-export const documentsCompany = [
-  "PAN card of the company / firm",
-  "ID proof of directors / partners / authorised signatory",
-  "Certificate of Incorporation or Partnership Deed",
-  "Registered office address proof",
-  "Authorisation & Power of Attorney (Form TM-48)",
-  "Trademark logo (JPEG), proof of use & MSME / Startup certificate, if any",
+/* Partnership / Proprietorship documents (same icon order as above) */
+export const documentsPartner = [
+  "PAN card of the proprietor / every partner",
+  "Aadhaar or other photo ID of the proprietor / every partner",
+  "Business address proof: rent agreement or ownership proof",
+  "Latest utility bill of the business premises",
+  "Signed partnership deed (for partnerships) — we draft it",
+  "Mobile number & email ID (for OTP and updates)",
 ];
 
 export const whyUs = [
@@ -101,28 +101,28 @@ export const stats = [
 
 export const faqs = [
   {
-    q: "1. How long does trademark registration take in India?",
-    a: "About 12–18 months if there is no objection or opposition, and longer if there is. You can start using the ™ symbol from the day your application is filed.",
+    q: "1. Which business structure should I choose?",
+    a: "It depends on liability, funding plans and compliance. Private Limited suits startups and fundraising, LLP suits professionals and small businesses, OPC suits solo founders, and Partnership or Sole Proprietorship suit simple, low-compliance setups. Our expert will help you decide.",
   },
   {
-    q: "2. Can I use my trademark before registration is complete?",
-    a: "Yes, you can use the ™ symbol once the application is filed. The ® symbol is only for registered trademarks, and using it earlier is not allowed in India.",
+    q: "2. Is there a minimum capital for a company?",
+    a: "No. There is no minimum paid-up capital for a Private Limited Company, and the MCA filing fee is nil for authorised capital up to ₹15 lakh. State stamp duty and other charges still apply.",
   },
   {
-    q: "3. What is the government fee for a trademark?",
-    a: "₹4,500 per class for individuals, startups and small enterprises (e-filing), and ₹9,000 per class for others. These fees are non-refundable, so a proper search before filing is important. Our professional fee is separate and starts at ₹2,499.",
+    q: "3. What are the minimum requirements for a Private Limited Company?",
+    a: "At least 2 directors and 2 shareholders (the same people can be both), at least one director resident in India, a registered office address in India and a digital signature for each director.",
   },
   {
-    q: "4. What if the Registry raises an objection?",
-    a: "You must reply within 30 days of the examination report. If the reply is not accepted, a hearing can be scheduled. Our experts prepare the reply and assist you at the hearing.",
+    q: "4. How long does company registration take?",
+    a: "A Private Limited Company usually takes about 7–15 working days from complete documents, depending on name approval and MCA review. Partnerships and proprietorships are faster, as they do not need MCA incorporation.",
   },
   {
-    q: "5. What if my application is opposed?",
-    a: "Anyone can oppose within four months of journal publication. You must file a counter-statement within two months of the notice, and the Registrar decides after evidence and a hearing.",
+    q: "5. Can a foreigner or NRI be a director?",
+    a: "Yes. Foreign nationals and NRIs can be directors and shareholders of a Private Limited Company, subject to the FDI rules for the sector, but at least one director must be resident in India.",
   },
   {
-    q: "6. How long is a trademark valid, and how do I renew it?",
-    a: "A registered trademark is valid for ten years and can be renewed indefinitely, every ten years. The renewal fee is ₹9,000 per class (e-filing), and a grace period with a surcharge applies after expiry.",
+    q: "6. What happens after incorporation?",
+    a: "You will need a bank account, GST registration if applicable, and yearly compliance such as ROC and income tax filings. Our team can handle these for you after registration.",
   },
 ];
 
@@ -135,80 +135,80 @@ export const businessTypes = [
   "Other",
 ];
 
-// Prices and inclusions taken from legalpapersindia.com/trademark-registration (govt fee extra).
+// PLACEHOLDER pricing — replace with the real company registration prices and inclusions before going live.
 export const pricingPlans = [
   {
-    name: "Basic",
-    desc: "Application initiation within 2 working days.",
-    originalPrice: 5000,
-    discount: "50% off",
-    price: 2499,
-    instantOff: 2499,
-    emi: false,
-    highlight: false,
-    features: [
-      "Trademark Search & Class Selection",
-      "Filing of Application in One Class",
-      "Digital Filing of TM-A Form",
-    ],
-  },
-  {
-    name: "Standard",
-    desc: "Application initiation within 1 working day.",
+    name: "LLP / OPC",
+    desc: "For professionals and solo founders who want limited liability.",
     originalPrice: 9999,
     discount: "50% off",
     price: 4999,
-    instantOff: 4999,
+    instantOff: 5000,
     emi: false,
-    highlight: true,
+    highlight: false,
     features: [
-      "Inclusive of Basic",
-      "Trademark Search Report + Filing (1 Class)",
-      "Logo + Wordmark Filing",
-      "Logo & Brand Name Design and Advice",
-      "Objection Reply (once, if required)",
+      "Name Check & Reservation",
+      "LLP Agreement or OPC Documents",
+      "Incorporation Filing with MCA",
+      "Dedicated Advisor for Company Setup",
     ],
   },
   {
-    name: "Premium",
-    desc: "Application initiation on the same day.",
-    originalPrice: 19999,
+    name: "Private Limited",
+    desc: "For startups and growing businesses that want credibility and funding options.",
+    originalPrice: 13999,
     discount: "50% off",
-    price: 9999,
-    instantOff: 9999,
+    price: 6999,
+    instantOff: 7000,
+    emi: false,
+    highlight: true,
+    features: [
+      "Name Check & Reservation",
+      "MoA & AoA Drafting",
+      "SPICe+ Filing with DIN for Directors",
+      "Certificate of Incorporation, PAN & TAN",
+      "Dedicated Advisor for Company Setup",
+    ],
+  },
+  {
+    name: "Complete Startup",
+    desc: "Everything to incorporate and start operating from day one.",
+    originalPrice: 29999,
+    discount: "50% off",
+    price: 14999,
+    instantOff: 15000,
     emi: true,
     highlight: false,
     features: [
-      "Inclusive of Standard",
-      "Trademark Filing (up to 2 Classes)",
-      "Logo, Wordmark & Tagline Protection",
-      "Objection Reply (twice, if required)",
-      "2 Hearing Assistance",
-      "Journal Publication Follow-up",
+      "Everything in Private Limited",
+      "GST Registration",
+      "MSME (Udyam Certificate)",
+      "Bank Account Opening Guidance",
+      "Dedicated Support & Fast Process",
     ],
   },
 ];
 
-export const whoNeedsTm = [
+export const whoNeedsCo = [
   {
-    title: "Startups & new brands",
-    desc: "Protect your name and logo early, before you spend on building an audience.",
-    tag: "File early",
+    title: "Startups & founders",
+    desc: "Raise funds, hire a team and build credibility with a proper company structure.",
+    tag: "Pvt Ltd / OPC",
   },
   {
-    title: "Online & D2C sellers",
-    desc: "Marketplaces and brand programs often ask for a trademark application or registration.",
-    tag: "Marketplace-ready",
+    title: "Freelancers & consultants",
+    desc: "Move from a personal PAN to a registered business, with limited liability if you want it.",
+    tag: "OPC / LLP",
   },
   {
-    title: "Manufacturers & product brands",
-    desc: "Protect product names, packaging and logos across India and keep copycats away.",
-    tag: "Stops copycats",
+    title: "Family & small trading businesses",
+    desc: "Start together with a simple partnership or proprietorship and minimum paperwork.",
+    tag: "Partnership / Proprietorship",
   },
   {
-    title: "Professionals, studios & creators",
-    desc: "Clinics, agencies, studios and creators can protect their name, logo and tagline.",
-    tag: "Builds brand value",
+    title: "Farmers & producer groups",
+    desc: "Form a producer company to pool resources and sell together.",
+    tag: "Producer Company",
   },
 ];
 

@@ -1,41 +1,41 @@
 import { motion } from "framer-motion";
 import {
-  FaFileSignature,
-  FaLightbulb,
-  FaExclamationCircle,
-  FaGavel,
-  FaBalanceScale,
-  FaSyncAlt,
+  FaBuilding,
+  FaHandshake,
+  FaUser,
+  FaUsers,
+  FaStore,
+  FaSeedling,
 } from "react-icons/fa";
 import { ArrowRight, Sparkles } from "lucide-react";
 import { services } from "../data";
 
-import imgRegistration from "../assets/services/tm-registration.png";
-import imgBrandName from "../assets/services/tm-brand-name.png";
-import imgObjection from "../assets/services/tm-objection.png";
-import imgHearing from "../assets/services/tm-hearing.png";
-import imgOpposition from "../assets/services/tm-opposition.png";
-import imgRenewal from "../assets/services/tm-renewal.png";
+import imgPvt from "../assets/services/co-private-limited.png";
+import imgLlp from "../assets/services/co-llp.png";
+import imgOpc from "../assets/services/co-opc.png";
+import imgPartnership from "../assets/services/co-partnership.png";
+import imgProprietorship from "../assets/services/co-proprietorship.png";
+import imgProducer from "../assets/services/co-producer.png";
 
 /* "Get started" link kahan jaye: top wale form ki id */
 const CTA_HREF = "#top-form";
 
 const serviceImages = [
-  imgRegistration,
-  imgBrandName,
-  imgObjection,
-  imgHearing,
-  imgOpposition,
-  imgRenewal,
+  imgPvt,
+  imgLlp,
+  imgOpc,
+  imgPartnership,
+  imgProprietorship,
+  imgProducer,
 ];
 
 const serviceIcons = [
-  FaFileSignature,
-  FaLightbulb,
-  FaExclamationCircle,
-  FaGavel,
-  FaBalanceScale,
-  FaSyncAlt,
+  FaBuilding,
+  FaHandshake,
+  FaUser,
+  FaUsers,
+  FaStore,
+  FaSeedling,
 ];
 
 /* Har card ka apna colour theme */
@@ -172,7 +172,7 @@ export default function Services() {
           </span>
 
           <h2 className="mt-4 font-display text-3xl font-extrabold leading-tight text-[#173252] sm:text-4xl md:text-5xl">
-            Everything for your Trademark,{" "}
+            Everything for your Company,{" "}
             <span className="bg-gradient-to-r from-orange-500 to-amber-500 bg-clip-text text-transparent">
               handled in one place
             </span>

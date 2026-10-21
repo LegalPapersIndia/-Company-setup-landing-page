@@ -15,7 +15,7 @@ export default function StickyMobileCTA() {
         className="flex flex-1 items-center justify-center gap-2 rounded-lg bg-navy-900 py-3 text-sm font-medium text-paper"
       >
         <FileText className="h-4 w-4" />
-        Register Trademark
+        Register Company
       </a>
     </div>
   );
