@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { CheckCircle2, Star, ArrowRight } from "lucide-react";
 import LeadForm from "./LeadForm";
-import heroImage from "../assets/co-hero.png";
+import heroImage from "../assets/co-hero1.png";
 import secureIcon from "../assets/card.png";
 import speedIcon from "../assets/card2.png";
 import supportIcon from "../assets/card3.png";
@@ -67,7 +67,7 @@ export default function Hero() {
 
       {/* ================= MAIN CONTAINER ================= */}
 
-      <div className="relative mx-auto grid max-w-[1400px] grid-cols-1 items-start gap-8 px-4 pb-16 pt-8 sm:px-6 lg:grid-cols-[1.1fr_0.9fr] lg:gap-6 lg:px-8 lg:pb-14 lg:pt-8">
+      <div className="relative mx-auto grid max-w-[1400px] grid-cols-1 items-start gap-8 px-4 pb-0 pt-8 sm:px-6 lg:grid-cols-[1.1fr_0.9fr] lg:gap-6 lg:px-8 lg:pb-14 lg:pt-8">
         {/* =====================================================
             LEFT — HEADLINE + CONTENT
         ====================================================== */}
@@ -258,14 +258,15 @@ export default function Hero() {
 
         <div className="order-2 flex flex-col items-center lg:items-center">
           {/* FORM — Mobile: first, Desktop: second */}
-          <motion.div
-            initial={{ opacity: 0, y: 25, scale: 0.97 }}
-            animate={{ opacity: 1, y: 0, scale: 1 }}
-            transition={{ duration: 0.6, delay: 0.35 }}
-            className="relative order-1 mt-2 w-full max-w-sm lg:order-2 lg:mt-8 lg:max-w-md"
-          >
-            <LeadForm id="lead-form" />
-          </motion.div>
+         <motion.div
+  id="top-form"
+  initial={{ opacity: 0, y: 25, scale: 0.97 }}
+  animate={{ opacity: 1, y: 0, scale: 1 }}
+  transition={{ duration: 0.6, delay: 0.35 }}
+  className="relative order-1 mt-2 w-full max-w-sm scroll-mt-4 lg:order-2 lg:mt-8 lg:max-w-md"
+>
+  <LeadForm id="lead-form" />
+</motion.div>
 
           {/* BANNER IMAGE — DESKTOP ONLY */}
           <motion.div

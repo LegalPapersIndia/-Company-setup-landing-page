@@ -8,6 +8,8 @@ import mouthshutLogo from "../assets/M.png";
 
 /* ------------------------------------------------------------------
    DATA: yahan se numbers change karo
+   ringFill (optional): ring kitni bhari dikhe (0 se 1).
+   Na likho toh ring asli rating (rating / 5) jitni bharegi.
    ------------------------------------------------------------------ */
 const platforms = [
   {
@@ -32,8 +34,9 @@ const platforms = [
     name: "MouthShut Reviews",
     logo: mouthshutLogo,
     logoClass: "h-11", // logo mai padding zyada hai, isliye thoda bada
-    accent: "#f26522",
+    accent: "#7c3aed",
     rating: 4,
+    ringFill: 0.92, // sirf MouthShut ki ring zyada bhari dikhane ke liye
     caption: "MouthShut Score 75%. Rated 4 out of 5 by MouthShut users",
     badge: "476 votes",
   },
@@ -67,12 +70,12 @@ function CountUp({ to, decimals = 1 }) {
 }
 
 /* Circular progress ring with the rating inside */
-function RatingRing({ rating, accent }) {
+function RatingRing({ rating, accent, fill }) {
   const size = 148;
   const stroke = 10;
   const r = (size - stroke) / 2;
   const C = 2 * Math.PI * r;
-  const pct = rating / 5;
+  const pct = fill ?? rating / 5;
 
   return (
     <div
@@ -209,7 +212,7 @@ function ReviewCard({ p, index }) {
 
       {/* body */}
       <div className="relative flex flex-1 flex-col items-center px-6 pb-6 pt-7 text-center">
-        <RatingRing rating={p.rating} accent={p.accent} />
+        <RatingRing rating={p.rating} accent={p.accent} fill={p.ringFill} />
 
         <div className="mt-5">
           <Stars rating={p.rating} accent={p.accent} />

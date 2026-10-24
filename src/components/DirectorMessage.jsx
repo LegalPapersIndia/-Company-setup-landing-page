@@ -17,7 +17,7 @@ const CTA_HREF = "#top-form";
    DATA: change name, role and message here
    ------------------------------------------------------------------ */
 const director = {
-  name: "Sarthak Gupta",
+  name: "Pradeep Gupta",
   role: "Director, Legal Papers India",
   eyebrow: "From the Director's desk",
   heading: "Compliance should never slow your business down",

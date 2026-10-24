@@ -113,7 +113,7 @@ function MarqueeCard({ item, onOpen, hidden = false }) {
       tabIndex={hidden ? -1 : 0}
       aria-hidden={hidden || undefined}
       aria-label={`Open photo: ${item.title}`}
-      className="group relative mr-3 block h-[190px] w-[250px] shrink-0 overflow-hidden rounded-2xl border border-white bg-white text-left shadow-[0_10px_28px_-14px_rgba(10,30,70,0.4)] transition duration-300 hover:-translate-y-1 hover:shadow-[0_26px_50px_-18px_rgba(10,30,70,0.5)] sm:mr-4 sm:h-[240px] sm:w-[320px] sm:rounded-3xl lg:h-[280px] lg:w-[380px]"
+      className="group relative mr-3 block h-[240px] w-[250px] shrink-0 overflow-hidden rounded-2xl border border-white bg-white text-left shadow-[0_10px_28px_-14px_rgba(10,30,70,0.4)] transition duration-300 hover:-translate-y-1 hover:shadow-[0_26px_50px_-18px_rgba(10,30,70,0.5)] sm:mr-4 sm:h-[300px] sm:w-[320px] sm:rounded-3xl lg:h-[360px] lg:w-[380px]"
     >
       <img
         src={item.src}

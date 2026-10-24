@@ -207,7 +207,7 @@ export default function LeadForm({ variant = "card" }) {
         type="submit"
         className="mt-4 flex w-full items-center justify-center gap-2 rounded-lg bg-navy-600 px-5 py-3.5 text-base font-bold text-white transition hover:bg-navy-700"
       >
-        Get free consultation
+        Get consultation now
         <ArrowRight className="h-4 w-4" />
       </motion.button>
       <p className="mt-3 text-center text-xs text-slate-500">
